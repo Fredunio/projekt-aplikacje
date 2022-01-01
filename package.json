@@ -1,0 +1,26 @@
+{
+  "name": "projekt-aplikacje",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fredunio/projekt-aplikacje.git"
+  },
+  "author": "Michael Dacko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Fredunio/projekt-aplikacje/issues"
+  },
+  "homepage": "https://github.com/Fredunio/projekt-aplikacje#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
+    "@typescript-eslint/parser": "^5.8.1",
+    "eslint": "^8.6.0",
+    "typescript": "^4.5.4"
+  }
+}
