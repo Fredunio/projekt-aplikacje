@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;600;700&display=swap');
+///variables
+
+//HEADER
+//@header-background: rgb(70, 81, 109);
+@header-background: linear-gradient(180deg, rgba(69, 90, 144, 1) 0%, rgba(76, 114, 157, 1) 48%, rgba(69, 90, 144, 1) 100%);
+@header-font-color: #efeff3;
+@header-font-size: 1.5rem;
+@header-font-weight: 300;
+@nav-links-margin: 5rem;
+@font-size-logo-header: 2.5rem;
+@font-color-logo-header: #f7facd;
+@font-weight-logo-header: 200;
+
+
+//FOOTER
+@footer-background-color: rgb(109, 98, 70); ///2f314c, rgb(109, 98, 70)
+@footer-header-color: rgb(236, 213, 152);
+@footer-links-color: white;
+@footer-links-font-size: 1.2rem;
+@footer-links-font-weight: 300;
+@footer-links-header-font-size: 1.5rem;
+
+//BUTTONS
+@font-color-btn: #2a2a2c;
+@font-size-btn: 1.5rem;
+@font-weight-header-btn: 300;
+@login-btn-color: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.95) 100%);
+
+@sign-up-bt-color: white;
+
+///LAYOUT
+@min-width-layout: 40rem;
+@max-width-layout: 160rem;
+
+//FONTS
+@font-family-primary: Roboto, "Fira Sans", Arial, Verdana, sans-serif;
+@font-family-secondary: "Fira Sans", "Roboto", Arial, Verdana, sans-serif;
+@font-family-tertiary: Oswald, Roboto, Arial, Verdana, sans-serif;
+
+
+:root {
+  box-sizing: border-box;
+  font-family: @font-family-primary;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: @header-background;
+  max-width: @max-width-layout;
+  color: @header-font-color;
+  font-size: @header-font-size;
+  font-weight: @header-font-weight;
+  height: 6rem;
+  z-index: 100;
+  box-shadow: 0 10px 10px 10px #7a7e8c;
+
+  & #logo-header {
+    cursor: pointer;
+    margin-left: 4rem;
+    font-size: @font-size-logo-header;
+    font-weight: @font-weight-logo-header;
+    font-family: @font-family-secondary;
+    color: @font-color-logo-header
+  }
+
+  & .nav-header {
+    list-style: none;
+
+    li + li {
+      margin-left: @nav-links-margin;
+    }
+  }
+
+  & li {
+    display: inline-block;
+    text-transform: uppercase;
+    color: @header-font-color;
+    font-size: @header-font-size;
+
+
+    & a:hover {
+      text-decoration: underline;
+    }
+
+    .highlight-link {
+      font-weight: 600;
+    }
+  }
+
+  & .header-btns-container {
+    margin-right: 4rem;
+    height: 100%;
+    display: flex;
+
+    & > * {
+      margin-left: 1rem;
+      padding-top: 2rem
+    }
+  }
+}
+
+
+.header-btn {
+  //display: inline-block;
+  font-size: @font-size-btn;
+  font-weight: @font-weight-header-btn;
+  padding: 0 0.8rem;
+  //height: 100%;
+  //border-radius: 10px;
+  //text-align: center;
+  color: @font-color-btn;
+  letter-spacing: 1px;
+}
+
+
+.login-header-btn {
+  background: @login-btn-color;
+}
+
+.sign-up-header-btn {
+  background: @sign-up-bt-color;
+}
+
+main {
+  max-width: @max-width-layout;
+}
+
+
+footer {
+  height: 20em;
+  background: @footer-background-color;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: @max-width-layout;
+
+  & h4 {
+    color: @footer-header-color;
+    font-size: @footer-links-header-font-size;
+  }
+
+
+  & .links-footer {
+    list-style: none;
+    font-size: @footer-links-font-size;
+    font-weight: @footer-links-font-weight;
+    color: @footer-links-color;
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .media-footer {
+    h4 {
+      text-align: center;
+    }
+  }
+
+  .media-logos-footer {
+    list-style: none;
+    display: flex;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

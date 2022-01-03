@@ -10,73 +10,104 @@
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-
-<header>
-    <img src="media/images/logo-header-100x100.png" alt="Logo Clocker" id="logo-header">
-    <nav>
-        <ul class="nav-header">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Services</a></li>
-        </ul>
-    </nav>
-    <div class="header-btns-container">
-        <a href="login.html" class="bright-btn login-btn">Login</a>
-        <a href="login.html" class="bright-btn sign-up-btn">Sign Up</a>
-    </div>
-
-</header>
-<main>
-    <div class="welcome-div">
-        <button>Start Now!</button>
-    </div>
-    <section id="statistics">
-        <h2>Statistics</h2>
-
-        <div class="user-count-statistics-container">
-            <h4 class="user-count-header">User count</h4>
-            <div class="user-count"></div>
+<div class="body-grid-wrapper">
+    <header>
+        <!--    <img src="media/images/logo-header-100x100.png" alt="Logo Clocker" id="logo-header">-->
+        <div id="logo-header"><a href="">Clocker</a></div>
+        <nav>
+            <ul class="nav-header">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="" class="highlight-link">Planner</a></li>
+            </ul>
+        </nav>
+        <div class="header-btns-container">
+            <a href="login.html" class="header-btn login-header-btn">Login</a>
+            <a href="sign-up.html" class="header-btn sign-up-header-btn">Sign Up</a>
         </div>
 
-        <div class="hours-statistics-container">
-            <h3>Our Reported User Hours</h3>
-            <div class="hours-week-statistics">
-                <h4 class="hours-week-header">Hours Per Week</h4>
-                <div class="hours-week-count">42</div>
-            </div>
-            <div class="hours-month-statistics">
-                <h4 class="hours-month-header">Hours Per Month</h4>
-                <div class="hours-month-count">321</div>
-            </div>
-            <div class="hours-year-statistics">
-                <h4 class="hours-year-header">Hours Per Year</h4>
-                <div class="hours-year-count">696</div>
-            </div>
-        </div>
-        <div class="hours-all-time-statistics">
-            <h4 class="hours-all-time-header">All Time Hours</h4>
-        </div>
-    </section>
-</main>
-<footer>
-    <div class="links-col-footer">
-        <h4>COMPANY</h4>
-        <ul class="links-footer">
-            <li><a href="">About Us</a></li>
-            <li><a href="">News</a></li>
-            <li><a href="">Support</a></li>
-            <li><a href="">Contact Us</a></li>
-        </ul>
-    </div>
-    <div class="media-footer">
-        <h4>MEDIA</h4>
-        <ul>
-            <li>FB</li>
-            <li>Twitter</li>
-            <li>Github</li>
-        </ul>
-    </div>
+    </header>
 
-</footer>
+    <main>
+        <div class="welcome-div">
+            <h1>CLOCK YOUR TIME</h1>
+            <div class="start-btn-container">
+                <a href="" class="start-btn">START NOW</a>
+            </div>
+        </div>
+
+        <section id="statistics">
+            <div class="statistics-grid-container">
+                <div class="statistics-header">
+                    <h2>Statistics</h2>
+                </div>
+
+                <div class="user-count-statistics-container">
+                    <h3 class="user-count-header">User Count</h3>
+                    <div class="user-count">23121</div>
+                </div>
+
+                <div class="hours-statistics-container">
+                    <h3>Reported Hours</h3>
+                    <div class="hours-statistics-flex-wrapper">
+                        <div class="hours-week-statistics">
+                            <h4 class="hours-week-header">Week</h4>
+                            <div class="hours-week-count">42</div>
+                        </div>
+                        <div class="hours-month-statistics">
+                            <h4 class="hours-month-header">Month</h4>
+                            <div class="hours-month-count">321</div>
+                        </div>
+                        <div class="hours-year-statistics">
+                            <h4 class="hours-year-header">Year</h4>
+                            <div class="hours-year-count">696</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hours-all-time-statistics">
+                    <h3 class="hours-all-time-header">All Time Hours</h3>
+                    <div class="hours-all-time-count">12341</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="company-links-col-footer">
+            <h4>COMPANY</h4>
+            <ul class="links-footer">
+                <li><a href="">About Us</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="products-links-col-footer">
+            <h4>PRODUCTS</h4>
+            <ul class="links-footer">
+                <li><a href="">What is Clocker</a></li>
+                <li><a href="">Benefits</a></li>
+                <li><a href="">User Guide</a></li>
+                <li><a href="">Feedback</a></li>
+            </ul>
+        </div>
+
+
+        <div class="media-footer">
+            <h4>MEDIA</h4>
+            <ul class="media-logos-footer">
+                <li><a href=""><img src="media/logos/facebook/f_logo_60x60.png" alt=""></a></li>
+                <li><a href=""><img src="media/logos/twitter/twitter_logo_60.png" alt=""></a></li>
+                <li><a href=""><img src="media/logos/github/GitHub-logo-60x60.png" alt=""></a></li>
+            </ul>
+        </div>
+
+    </footer>
+</div>
+
 </body>
 </html>

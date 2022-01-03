@@ -1,0 +1,157 @@
+//@welcome-div-background: linear-gradient(90deg, rgba(223, 223, 223, 1) 0%, rgba(235, 252, 255, 1) 100%);
+//@welcome-div-background: linear-gradient(90deg, rgb(243, 243, 243) 0%, rgb(250, 238, 233) 50%, rgb(255, 248, 244) 100%);
+
+///WELCOME DIV
+@welcome-div-background: linear-gradient(126deg, rgba(202, 213, 240, 1) 0%, rgba(243, 250, 255, 1) 48%, rgba(255, 233, 229, 1) 100%);
+@welcome-header-font-size: 6rem;
+@welcome-header-font-weight: 700;
+@welcome-header-font-color: #2c2929;
+
+///BTNS
+@start-btn-font-size: 2rem;
+@start-btn-font-weight: 500;
+@start-btn-font-color: white;
+@start-btn-background: linear-gradient(90deg, rgba(180, 58, 140, 1) 0%, rgba(253, 29, 29, 1) 100%);
+
+///MAIN
+@statistics-main-header-font-size: 4rem;
+@statistics-main-header-font-weight: 100;
+@statistics-secondary-header-font-size: 2.5rem;
+@statistics-secondary-header-font-weight: 200;
+@statistics-tertiary-header-font-size: 1.2rem;
+@statistics-tertiary-header-font-weight: 200;
+
+///FONTS
+@font-family-primary: Roboto, "Fira Sans", Arial, Verdana, sans-serif;
+@font-family-secondary: "Fira Sans", "Roboto", Arial, Verdana, sans-serif;
+@font-family-tertiary: Oswald, Roboto, Arial, Verdana, sans-serif;
+
+///LAYOUT
+@max-width-layout: 140em;
+
+
+.welcome-div {
+  background: @welcome-div-background;
+  height: 50rem;
+  border-bottom: 1px solid black;
+  //height: 100vh;
+  margin-bottom: 10rem;
+
+  h1 {
+    font-family: @font-family-tertiary;
+    position: relative;
+    text-align: center;
+    top: 4rem;
+    font-size: @welcome-header-font-size;
+    font-weight: @welcome-header-font-weight;
+    color: @welcome-header-font-color;
+
+  }
+
+  .start-btn-container {
+    margin-top: 17rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .start-btn {
+    font-size: @start-btn-font-size;
+    background: @start-btn-background;
+    padding: 1.7rem 2rem;
+    color: @start-btn-font-color;
+    font-family: @font-family-secondary;
+    font-weight: @start-btn-font-weight;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+  }
+}
+
+
+#statistics {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+
+.statistics-grid-container {
+  border: 2px solid blue;
+  display: grid;
+  row-gap: 4rem;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "header-st "
+  "top-st "
+  "middle-st "
+  "bottom-st ";
+
+
+  .statistics-header {
+    grid-area: header-st;
+    text-align: center;
+
+    h2 {
+      font-weight: @statistics-main-header-font-weight;
+      font-size: @statistics-main-header-font-size;
+    }
+  }
+
+  h3, h4 {
+    text-align: center;
+  }
+
+  h3 {
+    font-size: @statistics-secondary-header-font-size;
+    font-weight: @statistics-secondary-header-font-weight;
+  }
+
+  h4 {
+    font-size: @statistics-tertiary-header-font-size;
+    font-weight: @statistics-tertiary-header-font-weight;
+  }
+
+  .user-count-statistics-container {
+    grid-area: top-st;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .hours-statistics-container {
+    grid-area: middle-st;
+
+    .hours-statistics-flex-wrapper {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-flow: row;
+    }
+
+    .hours-week-statistics, .hours-month-statistics, .hours-year-statistics {
+      display: flex;
+      border: 0.5px dotted #7a7e8c;
+      flex-flow: column;
+      align-items: center;
+    }
+
+
+  }
+
+  .hours-all-time-statistics {
+    grid-area: bottom-st;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  div[class$="count"] {
+    font-size: 2rem;
+    font-family: @font-family-tertiary;
+  }
+
+  & > * {
+    border: 1px solid red;
+  }
+}

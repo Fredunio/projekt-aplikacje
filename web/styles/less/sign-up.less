@@ -1,0 +1,127 @@
+@background: linear-gradient(149deg, rgba(218, 235, 255, 1) 0%, rgba(246, 249, 255, 1) 21%, rgba(188, 255, 255, 1) 53%, rgba(204, 255, 237, 1) 80%, rgba(200, 255, 235, 1) 100%);
+
+//BTN
+@login-btn-bg-color: rgb(85, 100, 139);
+@login-btn-font-color: white;
+
+//FEATURES
+@features-header-size: 1.4rem;
+@features-p-font-size: 1rem;
+
+///LOGO
+@logo-font-size: 5rem;
+@logo-color: #8c95c7;
+@logo-weight: 200;
+
+///FONTS
+@font-family-primary: Roboto, "Fira Sans", Arial, Verdana, sans-serif;
+@font-family-secondary: "Fira Sans", "Roboto", Arial, Verdana, sans-serif;
+@font-family-tertiary: Oswald, Roboto, Arial, Verdana, sans-serif;
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-flow: column;
+  //background-color: #f7f8fc;
+  background: @background;
+  color: #141c2c;
+  font-family: Roboto, "Fira Sans", Arial, sans-serif;
+  margin: 0;
+}
+
+.logo-sign-up-form {
+  font-size: @logo-font-size;
+  color: @logo-color;
+  font-family: @font-family-secondary;
+  font-weight: @logo-weight;
+  margin-top: -3rem;
+  margin-bottom: 0.6rem;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 3px;
+  //border: 20px solid #dce7ff;
+  width: 40rem;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+
+  a {
+    color: #2762eb;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .sign-up-form {
+    border-right: 1.2px solid #ecf2ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    flex: 1;
+  }
+
+  .form-control {
+    margin-bottom: 2rem;
+    width: 100%;
+
+  }
+}
+
+
+label {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+input {
+  background-color: transparent;
+  border: 2px solid #ecf2ff;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.6rem;
+  width: 100%;
+}
+
+
+.sign-up-btn {
+  cursor: pointer;
+  background-color: @login-btn-bg-color;
+  border: none;
+  outline: none;
+
+  //border-radius: 3px;
+  color: @login-btn-font-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.8rem;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.small {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  form {
+    border-right: 0;
+
+  }
+}

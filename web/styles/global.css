@@ -1,0 +1,219 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOkCnqEu92Fr1MmgWxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmSU5vAw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmEU9vAw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmWUlvAw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firasans/v11/va9C4kDNxMZdWfMOD5Vn9IjO.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firasans/v11/va9B4kDNxMZdWfMOD5VnWKnuQQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firasans/v11/va9B4kDNxMZdWfMOD5VnPKruQQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firasans/v11/va9E4kDNxMZdWfMOD5VfkA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firasans/v11/va9B4kDNxMZdWfMOD5VnZKvuQQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/firasans/v11/va9B4kDNxMZdWfMOD5VnLK3uQQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v40/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvgUE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v40/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvgUE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v40/TK3_WkUHHAIjg75cFRf3bXL8LICs18NvgUE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v40/TK3_WkUHHAIjg75cFRf3bXL8LICs1y9ogUE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v40/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZogUE.ttf) format('truetype');
+}
+:root {
+  box-sizing: border-box;
+  font-family: Roboto, "Fira Sans", Arial, Verdana, sans-serif;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(180deg, #455a90 0%, #4c729d 48%, #455a90 100%);
+  max-width: 160rem;
+  color: #efeff3;
+  font-size: 1.5rem;
+  font-weight: 300;
+  height: 6rem;
+  z-index: 100;
+  box-shadow: 0 10px 10px 10px #7a7e8c;
+}
+header #logo-header {
+  cursor: pointer;
+  margin-left: 4rem;
+  font-size: 2.5rem;
+  font-weight: 200;
+  font-family: "Fira Sans", "Roboto", Arial, Verdana, sans-serif;
+  color: #f7facd;
+}
+header .nav-header {
+  list-style: none;
+}
+header .nav-header li + li {
+  margin-left: 5rem;
+}
+header li {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #efeff3;
+  font-size: 1.5rem;
+}
+header li a:hover {
+  text-decoration: underline;
+}
+header li .highlight-link {
+  font-weight: 600;
+}
+header .header-btns-container {
+  margin-right: 4rem;
+  height: 100%;
+  display: flex;
+}
+header .header-btns-container > * {
+  margin-left: 1rem;
+  padding-top: 2rem;
+}
+.header-btn {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 0 0.8rem;
+  color: #2a2a2c;
+  letter-spacing: 1px;
+}
+.login-header-btn {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, #ffffff 50%, rgba(255, 255, 255, 0.95) 100%);
+}
+.sign-up-header-btn {
+  background: white;
+}
+main {
+  max-width: 160rem;
+}
+footer {
+  height: 20em;
+  background: #6d6246;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 160rem;
+}
+footer h4 {
+  color: #ecd598;
+  font-size: 1.5rem;
+}
+footer .links-footer {
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: white;
+}
+footer .links-footer a:hover {
+  text-decoration: underline;
+}
+footer .media-footer h4 {
+  text-align: center;
+}
+footer .media-logos-footer {
+  list-style: none;
+  display: flex;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
