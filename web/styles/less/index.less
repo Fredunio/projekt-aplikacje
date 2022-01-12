@@ -76,7 +76,7 @@
 }
 
 .statistics-grid-container {
-  border: 2px solid blue;
+  //border: 2px solid blue;
   display: grid;
   row-gap: 4rem;
   grid-template-columns: auto;
@@ -91,6 +91,7 @@
   .statistics-header {
     grid-area: header-st;
     text-align: center;
+    border-bottom: 2px solid black;
 
     h2 {
       font-weight: @statistics-main-header-font-weight;
@@ -131,7 +132,7 @@
 
     .hours-week-statistics, .hours-month-statistics, .hours-year-statistics {
       display: flex;
-      border: 0.5px dotted #7a7e8c;
+      //border: 0.5px dotted #7a7e8c;
       flex-flow: column;
       align-items: center;
     }
@@ -151,7 +152,7 @@
     font-family: @font-family-tertiary;
   }
 
-  & > * {
-    border: 1px solid red;
+  .statistics-block-container {
+    border-bottom: 1px solid #8f8f8f;
   }
 }

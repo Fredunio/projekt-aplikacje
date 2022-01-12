@@ -169,6 +169,9 @@ header .header-btns-container > * {
   margin-left: 1rem;
   padding-top: 2rem;
 }
+header .header-btns-container a:hover {
+  text-decoration: underline;
+}
 .header-btn {
   font-size: 1.5rem;
   font-weight: 300;
@@ -208,10 +211,14 @@ footer .links-footer a:hover {
 }
 footer .media-footer h4 {
   text-align: center;
+  margin-bottom: 2rem;
 }
 footer .media-logos-footer {
   list-style: none;
   display: flex;
+}
+footer .media-logos-footer li {
+  padding: 0 1.2rem;
 }
 a {
   text-decoration: none;

@@ -36,7 +36,6 @@
   margin-bottom: 10rem;
 }
 .statistics-grid-container {
-  border: 2px solid blue;
   display: grid;
   row-gap: 4rem;
   grid-template-columns: auto;
@@ -46,6 +45,7 @@
 .statistics-grid-container .statistics-header {
   grid-area: header-st;
   text-align: center;
+  border-bottom: 2px solid black;
 }
 .statistics-grid-container .statistics-header h2 {
   font-weight: 100;
@@ -82,7 +82,6 @@
 .statistics-grid-container .hours-statistics-container .hours-month-statistics,
 .statistics-grid-container .hours-statistics-container .hours-year-statistics {
   display: flex;
-  border: 0.5px dotted #7a7e8c;
   flex-flow: column;
   align-items: center;
 }
@@ -96,6 +95,6 @@
   font-size: 2rem;
   font-family: Oswald, Roboto, Arial, Verdana, sans-serif;
 }
-.statistics-grid-container > * {
-  border: 1px solid red;
+.statistics-grid-container .statistics-block-container {
+  border-bottom: 1px solid #8f8f8f;
 }
